@@ -1,3 +1,5 @@
+//chatGpt oli apuna Calculator-luokan tekemisessä
+
 package main;
 import java.util.Scanner;
 
@@ -18,7 +20,7 @@ public class App
         University university = new University();
 
         while(!exit) {
-            System.out.println("1) Lisää opiskelija, 2) Listaa opiskelijat, 3) Lisää opiskelijalle suorite, 4) Listaa opiskelijan suoritukset, 5) Laske opiskelijan suoritusten keskiarvo, 6) Laske opiskelijan suoritusten mediaani, 7) Tallenna opiskelijat tiedostoon, 8) Lataa opiskelijat tiedostosta, 0) Lopeta ohjelma");
+            System.out.println("1) Lisää opiskelija, 2) Listaa opiskelijat, 3) Lisää opiskelijalle suorite, 4) Listaa opiskelijan suoritteet, 5) Laske opiskelijan suoritusten keskiarvo, 6) Laske opiskelijan suoritusten mediaani, 7) Tallenna opiskelijat tiedostoon, 8) Lataa opiskelijat tiedostosta, 0) Lopeta ohjelma");
             if(sc.hasNext()) {
                 int i = 0;
                 String stringInput = sc.nextLine();
@@ -46,7 +48,7 @@ public class App
                     //lisää opiskelijalle suorite
                     university.listStudents2();
                     //System.out.println("0: name")
-                    System.out.println("Mille opiskelijalla suorite lisätään?");
+                    System.out.println("Mille opiskelijalle suorite lisätään?");
                     String numberstring = sc.nextLine();
                     int number = Integer.parseInt(numberstring);
                     Student r = university.getStudent(number);
